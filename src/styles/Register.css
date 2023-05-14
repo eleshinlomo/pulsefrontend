@@ -1,0 +1,30 @@
+.register-wrapper{
+    display: block;
+    width: 100%;
+}
+
+.register-main{
+    display: block;
+}
+
+.register-main form {
+    display: block;
+    margin: 6rem 0;
+}
+
+.register-main form button{
+    height: 4rem;
+    width: 6rem;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.register-main form input{
+    display: block;
+    margin: 2rem auto;
+    height: 3rem;
+    width: 15rem;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 40px;
+}

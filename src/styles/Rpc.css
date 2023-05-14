@@ -1,0 +1,13 @@
+.rpc-wrapper{
+  display: block;
+}
+
+.rpc-main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    font-size: 25px;
+    margin-top: 10rem;
+    padding: 0 1rem;
+}

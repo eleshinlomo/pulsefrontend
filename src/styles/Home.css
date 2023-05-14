@@ -1,0 +1,130 @@
+.home-wrapper{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+header{
+    display: block;
+    padding: 0 2rem;
+}
+
+.home-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.home-main form button{
+ height: 3rem;
+ width: 6rem;
+ border-radius: 60px;
+ font-size: 15px;
+ font-weight: bold;
+ background-color: white;
+}
+
+
+
+.home-main h2{
+    color: white;
+    width: 10rem;
+    background-image: linear-gradient(  red,  indigo );
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* right side */
+
+.home-main-left{
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+    
+}
+
+.home-left-close-x{
+
+    font-size: 40px;
+    color: green;
+    padding: 0 1rem;
+    pointer-events:visible;
+
+}
+
+.home-main-left form{
+    display: block;
+    margin: 0 auto;
+    
+}
+
+
+
+
+.home-main-left form input{
+    display: block;
+    height: 3rem;
+    width: 13rem;
+    text-align: center;
+    border-radius: 60px;
+    margin: 1rem 0;
+    font-size: 20px;
+}
+
+.home-main-left form textarea{
+    display: block;
+    height: 8rem;
+    width: 13rem;
+    margin: 1rem 0;
+}
+
+/* home center */
+
+.home-main-center{
+    display: block;
+    margin-top: 1rem;
+}
+
+
+
+/* right side */
+
+.home-main-right{
+    display: block;
+    margin: 1rem auto;
+    
+}
+
+.home-main-right form{
+    display: block;
+    margin: 0 auto;
+}
+
+.home-main-right form input{
+    display: block;
+    height: 3rem;
+    width: 13rem;
+    text-align: center;
+    border-radius: 60px;
+    font-size: 20px;
+    margin: 1rem 0;
+
+}
+
+@media (max-width: 1250px){
+
+    .home-wrapper{
+        display: block;
+    }
+
+    .home-main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    header{
+        font-size: 14px;
+    }
+   
+
+}

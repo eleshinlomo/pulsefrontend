@@ -1,0 +1,22 @@
+.nav-wrapper{
+    display: block;
+    width: 100%;
+}
+
+.nav-main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+    font-size: 20px;
+    padding: 2rem 1rem;
+}
+
+.nav-main a{
+    color: white;
+    background-image: linear-gradient(  red,  indigo );
+    width: 7rem;
+    border-radius: 50px;
+}
