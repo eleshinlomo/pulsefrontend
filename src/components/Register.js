@@ -10,11 +10,11 @@ const Register = () => {
     const [message, setMessage] = useState('Register Here')
 
     // add User
-    
+    const registerUser = process.env.REACT_APP_REGISTERUSER_API
 
     const registerHandler =  (e) => {
         e.preventDefault()
-        fetch('http://localhost:4100/api/register', {
+        fetch( registerUser , {
             method: "POST",
             mode: 'cors',
             headers: {

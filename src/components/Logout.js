@@ -18,7 +18,7 @@ const Logout = () => {
   
     const logoutAP = () => {
       try{
-      fetch('http://localhost:4100/api/logout', {
+      fetch( logoutAPI , {
         method: "POST",
         mode: "cors",
         "credentials": "include"

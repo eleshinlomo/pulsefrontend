@@ -23,10 +23,11 @@ const Home = () => {
     const navigate = useNavigate()
 
 // login
+const userLogin_API = process.env.REACT_APP_USERLOGIN_API
     const loginHandler = (e) => {
         e.preventDefault();
         try {
-          fetch('http://localhost:4100/api/login', {
+          fetch(userLogin_API , {
             method: 'POST',
             mode: 'cors',
             credentials: 'include',
@@ -62,11 +63,13 @@ const Home = () => {
 
 
     // get User details
-// const getFixer_API = process.env.REACT_APP_GETFIXER_API
+
+    const getUser_API = process.env.REACT_APP_USER_API
+
 useEffect(()=>{
     try{
     
-    isLoggedIn && fetch('http://localhost:4100/api/getuser', {
+    isLoggedIn && fetch(getUser_API , {
         method: "GET",
         mode: "cors",
         "credentials": "include",
@@ -94,7 +97,7 @@ useEffect(()=>{
         catch(err){
             setMessage(err.message)
         }
-}, [isLoggedIn])
+}, [isLoggedIn, getUser_API])
 
 // handle projects 
 
@@ -113,16 +116,20 @@ const handleProject = (e)=>{
     </div>
 
 <header>
-<h1>Welcome to Pulse AI {greeting}</h1>
+<h1>Welcome to Pulse PLS {greeting}</h1>
 
 <marquee> <span>BREAKING: PULSECHAIN NOW LAUNCHED. LIQUIDITY TO BE ADDED SOON!</span></marquee>
 
 
-
+<h3>This project primary aim is to track the Pulsechain 
+Network and follow up with Projects that are being created on Pulsechain.<p>
+ We are keen to showcase top projects on the Pulsechain and further provide better 
+platform for notable projects or start-ups emerging on Pulsechain.</p></h3>
 <h3>If you are here, we assume you know what you are doing</h3>
 <h3>Crypto is high-risk investment and you could lose all that you have in 1 day.</h3>
 <h3>All the projects on this website are posted by users like you and have not been vetted</h3>
-<h3>If you understand this and willing to lose your money, come right in.</h3>
+<h3>We are not in anyway afiliated with Developers of these projects as our keen 
+interest is mainly on how blockchain start-ups are solving real-life problems.</h3>
 
 {showMsg ?
     <div className='msg-top'>{msg}</div>:null

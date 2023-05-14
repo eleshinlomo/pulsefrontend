@@ -7,8 +7,8 @@ const Footer = () => {
 
     <div className='footer-main'>
 
-        <p>Copyright 2023. Pulse AI</p>
-        <p>Pulse AI is not a PulseChain company nor affiliated with pulsechain</p>
+        <p>Copyright 2023. Pulse PLS</p>
+        <p>Pulse PLS is not a PulseChain company nor affiliated with pulsechain</p>
         <p>This project is for experimental purpose only.</p>
 
         </div>
