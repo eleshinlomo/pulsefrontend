@@ -8,7 +8,7 @@ const RPCsetup = () => {
     <Nav />
 
 <ul className='rpc-main'>
-
+<div className='config-header'>MANUAL SETTINGS</div>
 <li>
 Network Name:
 PulseChain
