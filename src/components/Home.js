@@ -196,7 +196,7 @@ interest is mainly on how blockchain start-ups are solving real-life problems.</
 
 
 <form onSubmit={loginHandler}>
-<input type="text" onChange={(e)=>setUsername(e.target.value)} value={username} placeholder='Username' required />
+<input type="text" onChange={(e)=>setUsername(e.target.value)} value={username.toUpperCase()} placeholder='Username' required />
 <input type="password" onChange={(e)=>setPassword(e.target.value)} value={password} placeholder='Your password' required />
 <button type="submit">Login</button>
 </form></div>:
