@@ -1,0 +1,52 @@
+.contracts-wrapper{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contracts-main{
+    display: block;
+    margin-right: 10rem;
+    width: 100%;
+
+    
+    
+}
+
+.contracts-main button{
+  width: 7rem;
+  height: 4rem;
+  background-color: indigo;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.contracts-addresses{
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 8rem;
+    margin-right: 4rem;
+    font-size: 13px;
+    padding: 1rem 1rem;
+
+    
+    
+}
+
+.img-div{
+    display: block;
+    margin: 2rem 0;
+    width: 20rem;
+    height: 10rem;
+    
+    
+    
+    
+}
+
+.source-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

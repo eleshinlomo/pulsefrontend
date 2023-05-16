@@ -6,7 +6,7 @@
 
 header{
     display: block;
-    padding: 0 2rem;
+    padding: 4rem 2rem;
 }
 
 .greeting{
@@ -58,6 +58,7 @@ width: 100%;
 .home-main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    
 }
 
 .home-main form button{

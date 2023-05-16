@@ -6,6 +6,7 @@ import RPCsetup from './components/RPCsetup';
 import Register from './components/Register';
 import Footer from './components/Footer';
 import Logoutresponse from './components/Logoutresponse'
+import Contracts from './components/Contracts';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   <Route exact path ="/" element = {<Home /> } />
   <Route path ="/register" element = {<Register /> } />
   <Route path ="/rpcsetup" element = {<RPCsetup /> } />
+  <Route path ="/contracts" element = {<Contracts /> } />
   <Route path ="/logoutresponse" element = {<Logoutresponse /> } />
 </Routes>
 <Footer />

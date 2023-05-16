@@ -1,11 +1,14 @@
 .footer-wrapper{
     display: block;
     width: 100%;
+    background-color: white;
+    color: black;
     
 }
 
 .footer-main{
     text-align: center;
     padding: 0 2rem;
+    
     
 }
