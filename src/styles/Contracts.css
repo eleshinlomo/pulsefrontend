@@ -1,7 +1,6 @@
 .contracts-wrapper{
     display: block;
     width: 100%;
-    height: 100%;
     overflow: hidden;
 }
 
@@ -37,8 +36,8 @@
 .img-div{
     display: block;
     margin: 2rem 0;
-    width: 20rem;
-    height: 10rem;
+    width: auto;
+    height: 5rem;
     
     
     
