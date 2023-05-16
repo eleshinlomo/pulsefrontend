@@ -50,7 +50,6 @@ const userLogin_API = process.env.REACT_APP_USERLOGIN_API
                 setMessage(response.message);
                 setIsLoggedIn(true);
                 setNotLoggedIn(false)
-                
               }
               setMessage(response.message)
         })
