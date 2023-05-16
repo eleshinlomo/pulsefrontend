@@ -52,7 +52,7 @@ const userLogin_API = process.env.REACT_APP_USERLOGIN_API
                 setNotLoggedIn(false)
                 
               }
-              setMessage(response.data)
+              setMessage(response.message)
         })
         }
         catch (err) {
@@ -173,7 +173,7 @@ interest is mainly on how blockchain start-ups are solving real-life problems.</
    
 
     <p>NO PROJECT TO SHOW NOW. DEVELOPERS CAN START ADDING 
-    PROJECTS FROM TUESDAY MAY 16, 2023</p>
+    PROJECTS SOON</p>
 </div>
 
 <div className='home-main-right'>
@@ -196,7 +196,7 @@ interest is mainly on how blockchain start-ups are solving real-life problems.</
 
 {/* login form */}
 <form onSubmit={loginHandler}>
-<input type="text" onChange={(e)=>setUsername(e.target.value)} value={username.toUpperCase()} placeholder='Username' required />
+<input type="text" onChange={(e)=>setUsername(e.target.value)} value={username.toLowerCase()} placeholder='Username' required />
 <input type="password" onChange={(e)=>setPassword(e.target.value)} value={password} placeholder='Your password' required />
 <button type="submit">Login</button>
 </form></div>:
