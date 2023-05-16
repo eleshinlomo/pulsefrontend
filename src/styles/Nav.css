@@ -81,7 +81,7 @@
 
     .ismobile-menu-btns{
         display: block;
-        position: absolute;
+        position: fixed;
         left: 0;
         margin-top: 4rem;
         background-color: indigo;

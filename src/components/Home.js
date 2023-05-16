@@ -7,7 +7,7 @@ import Logout from './Logout';
 
 
 const Home = () => {
-    const [showProjectForm, setShowprojectForm] = useState(false)
+    const [showProjectForm, setShowprojectForm] = useState(true)
     
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
@@ -130,9 +130,7 @@ platform for notable projects or start-ups emerging on Pulsechain.</p></h3>
 <h3>We are not in anyway afiliated with Developers of these projects as our keen 
 interest is mainly on how blockchain start-ups are solving real-life problems.</h3>
 
-{showMsg ?
-    <div className='msg-top'>{msg}</div>:null
-    }
+
 </header>
 
 <div className='home-main'>
@@ -142,11 +140,11 @@ interest is mainly on how blockchain start-ups are solving real-life problems.</
 
 
 
-<h2><Link onClick={()=>setShowprojectForm(true)}>GOT A PROJECT? CLICK HERE!</Link></h2>
+<h2><Link onClick={()=>setShowprojectForm(true)}>GOT A PROJECT ON PULSECHAIN? SHARE HERE!</Link></h2>
 
-{showProjectForm ?
-<div>
-<h2>SHARE YOUR PROJECT <Link onClick={()=>setShowprojectForm(false)} className='home-left-close-x'>X</Link></h2>
+{showMsg ?
+    <div className='msg-top'>{msg}</div>:null
+    }
          
     
     <form onClick={handleProject}>
@@ -159,9 +157,7 @@ interest is mainly on how blockchain start-ups are solving real-life problems.</
         <button type="submit">Submit</button>
     </form>
 
-    </div>:null
-
-}
+    
 </div>
 
 
@@ -170,6 +166,7 @@ interest is mainly on how blockchain start-ups are solving real-life problems.</
     <h2>PROJECTS</h2>
 
    
+    
 
     <p>NO PROJECT TO SHOW NOW. DEVELOPERS CAN START ADDING 
     PROJECTS SOON</p>

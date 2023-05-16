@@ -27,7 +27,7 @@ header{
 .cookie-wrapper{
 position: relative;
 background-color: indigo;
-height: 80vh;
+height: 40vh;
 width: 100%;
 }
 
@@ -38,6 +38,7 @@ width: 100%;
     right: 0;
     top: 0;
     bottom: 0;
+    z-index: 5;
     font-size: 15px;
 }
 
@@ -49,9 +50,9 @@ width: 100%;
 
 .msg-top{
     display: block;
-    margin: 1rem 0;
-    background-color: red;
-    font-size: 25px;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    font-size: 15px;
     font-size: bold;
 }
 
@@ -97,7 +98,7 @@ width: 100%;
 .home-main-left{
     display: block;
     margin: 1rem auto;
-    text-align: center;
+
     
 }
 
@@ -125,15 +126,15 @@ width: 100%;
     width: 13rem;
     text-align: center;
     border-radius: 60px;
-    margin: 1rem 0;
     font-size: 20px;
+    margin: 1rem 4rem;
 }
 
 .home-main-left form textarea{
     display: block;
     height: 8rem;
     width: 13rem;
-    margin: 1rem 0;
+    margin: 1rem 4rem;
 }
 
 /* home center */
@@ -184,6 +185,7 @@ width: 100%;
 
     .home-wrapper{
         display: block;
+        margin: 0 auto;
     }
 
     .home-main{
@@ -196,5 +198,10 @@ width: 100%;
         font-size: 14px;
     }
    
+    .cookie-wrapper{
+        height: 100vh;
+    }
+
+  
 
 }
