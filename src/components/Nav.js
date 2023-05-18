@@ -41,6 +41,8 @@ const Nav = () => {
     {isMobile ?
 
     <div className='ismobile-menu-btns'>
+
+    <div>
     <Link to="/"><button>Home</button></Link>
     <Link to="/"><button>About</button></Link>
     <a href="https://app.pulsex.com/swap"><button>Pulse DEX</button></a>
@@ -48,6 +50,12 @@ const Nav = () => {
     <Link to="/contracts"><button>Contracts</button></Link>
     <a href="https://twitter.com/RichardHeartWin"><button>RH Twitter</button></a>
     <button onClick={()=>setIsMobile(false)} >X</button>
+    </div>
+
+    <div className='ismobile-btns-img-div'>
+  
+    </div>
+
     </div>:null
 
     }

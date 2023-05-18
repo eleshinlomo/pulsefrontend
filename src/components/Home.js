@@ -7,8 +7,7 @@ import Logout from './Logout';
 
 
 const Home = () => {
-    const [showProjectForm, setShowprojectForm] = useState(true)
-    
+    const [toggle, setShowprojectForm] = useState(true)
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [message, setMessage] = useState('')
@@ -137,10 +136,7 @@ interest is mainly on how blockchain start-ups are solving real-life problems.</
 
 <div className='home-main-left'>
 
-
-
-
-<h2><Link onClick={()=>setShowprojectForm(true)}>GOT A PROJECT ON PULSECHAIN? SHARE HERE!</Link></h2>
+<Link onClick={()=>(setShowprojectForm(true))}><h2>GOT A PROJECT ON PULSECHAIN? SHARE HERE!</h2></Link>
 
 {showMsg ?
     <div className='msg-top'>{msg}</div>:null
@@ -207,10 +203,6 @@ interest is mainly on how blockchain start-ups are solving real-life problems.</
 </div>
 
 
-
-
-</div>
-
 {isCookie ?
 <div>
 
@@ -229,6 +221,11 @@ Thank you for your understanding and enjoy your visit!"</p>
 
 </div>:null
 }
+
+
+</div>
+
+
 </div>
   )
 }
